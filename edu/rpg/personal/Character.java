@@ -87,4 +87,16 @@ public class Character {
 			System.out.println("違う名前です");
 		}
 	}
+
+	public void getCondition() {
+		if (this.hp <= 0) {
+			System.out.println("返事がない、ただの屍のようだ");
+		}else if (this.hp <= 10) {
+			System.out.println("もう駄目…");
+		}else if (this.hp <= 50) {
+			System.out.println("もうちょっとで駄目そう");
+		}else {
+			System.out.println("まだまだ大丈夫！");
+		}
+	}
 }
