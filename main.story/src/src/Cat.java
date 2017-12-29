@@ -1,18 +1,11 @@
 package src;
 
-public class Cat {
-	public String color;
-	public String size;
-	private String howlVoice;
-
+public class Cat extends Animal{
 	//Constracter
 	public Cat(String color, String size) {
-		this.color = color;
-		this.size = size;
-	}
-
-	public void howl() {
-		System.out.println(howlVoice);
+		super.color = color;
+		super.size = size;
+		super.howlVoice = "にゃー";
 	}
 
 	public void eat(String food) {
