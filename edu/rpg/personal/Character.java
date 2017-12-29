@@ -80,4 +80,11 @@ public class Character {
 		return weapon.getPower() + this.power;
 	}
 
+	public void sameName(String name) {
+		if (this.name.equals(name)) {
+			System.out.println("同じ名前です");
+		} else {
+			System.out.println("違う名前です");
+		}
+	}
 }
