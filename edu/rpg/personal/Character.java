@@ -6,8 +6,8 @@ public class Character {
 	private String name;
 	private GenderType gender;
 	private Weapon weapon;
-	private int HP;
-	private int MP;
+	private int hp;
+	private int mp;
 	private int power;
 	private int defense;
 
@@ -32,20 +32,20 @@ public class Character {
 		return weapon;
 	}
 
-	public void setHP(int HP) {
-		this.HP = HP;
+	public void setHP(int hp) {
+		this.hp = hp;
 	}
 
 	public int getHP() {
-		return HP;
+		return hp;
 	}
 
-	public void setMP(int MP) {
-		this.HP = MP;
+	public void setMP(int mp) {
+		this.mp = mp;
 	}
 
 	public int getMP() {
-		return MP;
+		return mp;
 	}
 
 	public void setPower(int power) {
