@@ -15,4 +15,9 @@ public class Cat extends Animal{
 		String FluffBall = "毛玉";
 		return FluffBall;
 	}
+
+	// これじゃ駄目なの？
+	public String sleep() {
+		return "ゴロニャー";
+	}
 }
