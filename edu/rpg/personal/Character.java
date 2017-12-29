@@ -10,10 +10,14 @@ public class Character {
 	private int mp;
 	private int power;
 	private int defense;
+	private int exp;
+	private int level;
 
 	public Character(String name, Gender gender) {
 		this.name = name;
 		this.gender = gender;
+		this.exp = 0;
+		this.level = 1;
 	}
 
 	public String getName() {
@@ -63,4 +67,13 @@ public class Character {
 	public int getDefense() {
 		return defense;
 	}
+
+	public void addExp(int exp) {
+		this.exp += exp;
+	}
+
+	public void levelUp() {
+		this.level++;
+	}
+
 }
