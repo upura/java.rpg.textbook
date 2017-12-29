@@ -3,9 +3,8 @@ package src;
 public class Cat extends Animal{
 	//Constracter
 	public Cat(String color, String size) {
-		super.color = color;
-		super.size = size;
-		super.howlVoice = "にゃー";
+		super.setColor(color);
+		super.setSize(size);
 	}
 
 	public void eat(String food) {
