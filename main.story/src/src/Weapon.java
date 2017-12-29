@@ -1,13 +1,15 @@
 package src;
 
-public class Weapon {
+public abstract class Weapon {
 	private String weaponName;
 
-	protected void setWeaponName(String weaponName) {
+	public Weapon(String weaponName) {
 		this.weaponName = weaponName;
 	}
 
 	public String getWeaponName() {
 		return weaponName;
 	}
+
+	public abstract int getPower();
 }
