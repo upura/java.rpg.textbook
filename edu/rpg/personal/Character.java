@@ -4,14 +4,14 @@ import weapon.Weapon;
 
 public class Character {
 	private String name;
-	private String gender;
+	private GenderType gender;
 	private Weapon weapon;
 	private int HP;
 	private int MP;
 	private int power;
 	private int defense;
 
-	public Character(String name, String gender) {
+	public Character(String name, GenderType gender) {
 		this.name = name;
 		this.gender = gender;
 	}
@@ -20,7 +20,7 @@ public class Character {
 		return name;
 	}
 
-	public String getGender() {
+	public GenderType getGender() {
 		return gender;
 	}
 
