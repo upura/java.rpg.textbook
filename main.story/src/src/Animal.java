@@ -1,6 +1,6 @@
 package src;
 
-public class Animal {
+public abstract class Animal {
 	private String color;
 	private String size;
 	private String howlVoice;
@@ -25,4 +25,5 @@ public class Animal {
 		this.size = size;
 	}
 
+	public abstract void sleep();
 }
