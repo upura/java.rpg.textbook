@@ -16,8 +16,8 @@ public class Cat extends Animal{
 		return FluffBall;
 	}
 
-	// これじゃ駄目なの？
-	public String sleep() {
-		return "ゴロニャー";
+	@Override
+	public void sleep() {
+		System.out.println("ゴロニャー");
 	}
 }
