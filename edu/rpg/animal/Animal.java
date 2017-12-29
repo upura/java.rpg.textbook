@@ -1,4 +1,4 @@
-package src;
+package animal;
 
 public abstract class Animal {
 	private String color;

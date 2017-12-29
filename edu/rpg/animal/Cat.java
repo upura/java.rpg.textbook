@@ -1,4 +1,4 @@
-package src;
+package animal;
 
 public class Cat extends Animal{
 	//Constracter

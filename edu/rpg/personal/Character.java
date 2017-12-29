@@ -1,4 +1,6 @@
-package src;
+package personal;
+
+import weapon.Weapon;
 
 public class Character {
 	private String name;

@@ -1,4 +1,6 @@
-package src;
+package world;
+
+import animal.Cat;
 
 public class Second {
 

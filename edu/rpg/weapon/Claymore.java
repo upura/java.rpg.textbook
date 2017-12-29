@@ -1,4 +1,4 @@
-package src;
+package weapon;
 
 public class Claymore extends Weapon{
 	private int power = 40;

@@ -1,4 +1,4 @@
-package src;
+package world;
 
 public class First {
 
