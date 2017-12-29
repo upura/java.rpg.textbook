@@ -36,19 +36,19 @@ public class Character {
 		return weapon;
 	}
 
-	public void setHP(int hp) {
+	public void setHp(int hp) {
 		this.hp = hp;
 	}
 
-	public int getHP() {
+	public int getHp() {
 		return hp;
 	}
 
-	public void setMP(int mp) {
+	public void setMp(int mp) {
 		this.mp = mp;
 	}
 
-	public int getMP() {
+	public int getMp() {
 		return mp;
 	}
 
@@ -74,6 +74,10 @@ public class Character {
 
 	public void levelUp() {
 		this.level++;
+	}
+
+	public int getAttackPower() {
+		return weapon.getPower() + this.power;
 	}
 
 }
