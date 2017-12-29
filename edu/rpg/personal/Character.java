@@ -73,7 +73,11 @@ public class Character {
 	}
 
 	public void levelUp() {
-		this.level++;
+		if ((this.level <= 10 && this.exp >= 100)
+				|| (this.level > 11 && this.exp >= 200)) {
+			this.level++;
+			this.exp = 0;
+		}
 	}
 
 	public int getAttackPower() {
