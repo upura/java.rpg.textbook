@@ -1,6 +1,6 @@
 package exercise;
 
-public class exercise01 {
+public class Exercise01 {
 
 	public static void main(String[] args) {
 		System.out.println("Name: upura");
