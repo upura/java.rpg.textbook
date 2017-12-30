@@ -49,6 +49,29 @@ public class Battle {
 			if (characterHp > 0 && monsterHp > 0) {
 				System.out.println(this.monster.getName() + "は逃げだした！");
 			}
+		} else if (pattern == BattlePattern.ROOP) {
+			int characterHp = this.character.getHp();
+			int monsterHp = this.monster.getHp();
+			while (characterHp > 0 || monsterHp > 0) {
+				System.out.println(this.character.getName() + "の攻撃！");
+				System.out.println(this.monster.getName() + "は"
+						+ this.character.getAttackPower() + "のダメージを受けた！");
+				monsterHp -= this.character.getAttackPower();
+				if (monsterHp <= 0) {
+					System.out.println(this.monster.getName() + "を倒した！");
+					System.out.println(this.character.getName() + "は　経験値："
+							+ this.monster.getExp() + "ポイントを手に入れた");
+					this.character.addExp(this.monster.getExp());
+					break;
+				}
+				System.out.println(this.monster.getName() + "の攻撃！");
+				System.out.println(this.character.getName() + "は"
+						+ this.monster.getAttackPower() + "のダメージを受けた！");
+				characterHp -= this.monster.getAttackPower();
+				if (characterHp <= 0) {
+					System.out.println(this.character.getName() + "は死んでしまった。");
+				}
+			}
 		}
 	}
 }
