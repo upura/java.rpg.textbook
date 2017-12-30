@@ -1,7 +1,9 @@
 package world;
 
 import battle.Battle;
+import monster.Bat;
 import monster.Monster;
+import monster.Rabbit;
 import monster.Slime;
 import personal.Character;
 import personal.Gender;
@@ -17,10 +19,10 @@ public class BattleField {
 		Weapon claymore = new Claymore();
 		character.setWeapon(claymore);
 		// スライムのインスタンス化
-		Monster monster = new Slime();
+		Monster[] monsters = { new Slime(), new Rabbit(), new Bat() };
 		//バトル！！
 		try {
-			Battle battle = new Battle(character, monster);
+			Battle battle = new Battle(character, monsters);
 			battle.battle();
 		} catch (NullPointerException e) {
 			System.out.println("Character or Monstor is Null");
