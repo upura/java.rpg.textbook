@@ -19,7 +19,14 @@ public class BattleField {
 		// スライムのインスタンス化
 		Monster monster = new Slime();
 		//バトル！！
-		Battle battle = new Battle(character, monster);
-		battle.battle();
+		try {
+			Battle battle = new Battle(character, monster);
+			battle.battle();
+		} catch (NullPointerException e) {
+			System.out.println("Character or Monstor is Null");
+			e.printStackTrace();
+		} finally {
+			System.out.println("Battle has been done");
+		}
 	}
 }
