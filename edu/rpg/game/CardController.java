@@ -1,5 +1,7 @@
 package game;
 
+import java.util.Random;
+
 public class CardController {
 
 	private void addCard(Card[] cards, CardType cardType, int startIndex) {
@@ -20,4 +22,29 @@ public class CardController {
 		return cards;
 	}
 
+	public Card[] shuffle(Card[] cards) {
+		Card[] results = new Card[52];
+		Random random = new Random();
+		int index = 0;
+		while(index < 52) {
+			int rand = random.nextInt(52);
+			Card card = cards[rand];
+			boolean stillAdd = false;
+			for (Card result:results) {
+				if (result == null) {
+					break;
+				}
+				if (result.getCardType().equals(card.getCardType())
+						&& result.getNumber() == card.getNumber()) {
+					stillAdd = true;
+					break;
+				}
+			}
+			if (stillAdd) {
+				results[index] = card;
+				index++;
+			}
+		}
+		return results;
+	}
 }
